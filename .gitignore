@@ -1,3 +1,7 @@
+#node_modules and temp folder
+node_modules/
+temp/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
