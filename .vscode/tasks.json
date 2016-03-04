@@ -10,7 +10,7 @@
 // A task runner that calls the Typescript compiler (tsc) and
 // compiles based on a tsconfig.json file that is present in
 // the root of the folder open in VSCode
-{
+/*{
   // Only valid value (config schema version).
 	"version": "0.1.0",
 
@@ -39,15 +39,21 @@
     }
   ]
 }
-/*
+*/
 {
     "version": "0.1.0",
     "command": "grunt",
     "isShellCommand": true,
     "tasks": [
-        {
-            "taskName": "start"
-        }
+      {
+        "taskName": "tsc",
+        "isBuildCommand": true,
+        "showOutput": "silent",
+        "problemMatcher": "$tsc" 
+      },
+      {
+        "taskName": "start",
+        "problemMatcher": "$tsc" 
+      }
     ]
 }
-*/
