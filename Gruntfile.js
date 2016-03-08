@@ -18,6 +18,16 @@ module.exports = function(grunt) {
       options: {
 				logConcurrentOutput: true
 			}
+    },
+    ts: {
+      options: {
+        'compiler': './node_modules/typescript/bin/tsc'
+      },
+      default: {
+        tsconfig: {
+          passThrough : true
+        }
+      }
     }
     /*ts: {
       default : {
@@ -28,7 +38,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-concurrent');
-  //grunt.loadNpmTasks("grunt-ts");
+  grunt.loadNpmTasks("grunt-ts");
 
   // Starts the tsc compiler in watch mode
   // and fires up the lite-server.
