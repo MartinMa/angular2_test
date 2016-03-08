@@ -46,12 +46,14 @@
     "isShellCommand": true,
     "tasks": [
       {
+        /* just compiles the tsc files */
         "taskName": "tsc",
         "isBuildCommand": true,
         "showOutput": "silent",
         "problemMatcher": "$tsc" 
       },
       {
+        /* concurrently starts the server and the tsc compiler in watch mode */
         "taskName": "start",
         "problemMatcher": "$tsc" 
       }
