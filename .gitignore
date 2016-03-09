@@ -1,6 +1,6 @@
-#node_modules and temp folder
+#node_modules and live-dev-profile folder
 node_modules/
-temp/
+live-dev-profile/
 
 .tscache/
 

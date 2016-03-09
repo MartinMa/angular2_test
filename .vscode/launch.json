@@ -6,7 +6,7 @@
 			"type": "chrome",
       "runtimeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
       "runtimeArgs": ["--disable-default-apps", "--allow-file-access-from-files"],
-      "userDataDir": "${workspaceRoot}\\temp",
+      "userDataDir": "${workspaceRoot}\\live-dev-profile",
 			"request": "launch",
       "webRoot": "${workspaceRoot}",
 			"url": "http://localhost:3000/index.html",
