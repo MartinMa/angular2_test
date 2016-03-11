@@ -7,7 +7,7 @@ interface Hero {
 
 @Component({
     selector: 'my-app',
-    template:`
+    template: `
       <h1>{{title}}</h1>
       <h2>My Heroes</h2>
         <ul class="heroes">
